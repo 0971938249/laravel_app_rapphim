@@ -1016,6 +1016,7 @@ class UserController extends Controller
                 $chongoi = Chongoi::where('id_suatchieu', $idsuatchieu)
                                    ->whereIn('id_ghe', $ids_ghe)
                                    ->get();
+                                   
                 $luutam = Luutam::whereIn('id_ghe', $ids_ghe)->where('id_suatchieu', $idsuatchieu)->get();
                
 
